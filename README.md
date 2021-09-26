@@ -5,12 +5,12 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 依赖下载
 yarn install
 
-# serve with hot reload at localhost:8080
+# 启动服务 localhost:8080
 yarn dev
 
-# build for production with minification
+# 打包操作
 yarn build
 ```
