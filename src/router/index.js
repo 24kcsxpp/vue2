@@ -5,7 +5,8 @@ import BaseIndex from '@/modules/Base/Index'
 import ExampleOrTemp from '@/modules/Base/ExampleOrTemp'
 import ComputedOrWatch from '@/modules/Base/ComputedOrWatch'
 import ClassOrStyle from '@/modules/Base/ClassOrStyle'
-
+import FormIndex from '@/modules/Form/Index'
+import FormInputBind from '@/modules/Form/FormInputBind'
 
 Vue.use(Router)
 
@@ -35,6 +36,16 @@ export default new Router({
       path: '/Base/ClassOrStyle',
       name: 'ClassOrStyle',
       component: ClassOrStyle
+    },
+    {
+      path: '/Form/Index',
+      name: 'FormIndex',
+      component: FormIndex
+    },
+    {
+      path: '/Form/FormInputBind',
+      name: 'FormInputBind',
+      component: FormInputBind
     }
   ]
 })

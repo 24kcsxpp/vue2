@@ -23,19 +23,19 @@
           },
           {
             name: '组件篇',
-            url: '/Base/Index'
+            url: '/Components/Index'
           },
           {
             name: '表单篇',
-            url: '/Base/Index'
+            url: '/Form/Index'
           },
           {
             name: '路由篇',
-            url: '/Base/Index'
+            url: '/Router/Index'
           },
           {
             name: '状态管理篇',
-            url: '/Base/Index'
+            url: '/Store/Index'
           }
         ]
       };
