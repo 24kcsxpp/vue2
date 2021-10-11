@@ -21,6 +21,10 @@
           {
             name:'计算属性和侦听器',
             url:'/Base/ComputedOrWatch'
+          },
+          {
+            name:'Class与Style绑定',
+            url:'/Base/ClassOrStyle'
           }
         ]
       }

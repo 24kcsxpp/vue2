@@ -4,6 +4,8 @@ import Home from '@/modules/Home/Home'
 import BaseIndex from '@/modules/Base/Index'
 import ExampleOrTemp from '@/modules/Base/ExampleOrTemp'
 import ComputedOrWatch from '@/modules/Base/ComputedOrWatch'
+import ClassOrStyle from '@/modules/Base/ClassOrStyle'
+
 
 Vue.use(Router)
 
@@ -28,6 +30,11 @@ export default new Router({
       path: '/Base/ComputedOrWatch',
       name: 'ComputedOrWatch',
       component: ComputedOrWatch
+    },
+    {
+      path: '/Base/ClassOrStyle',
+      name: 'ClassOrStyle',
+      component: ClassOrStyle
     }
   ]
 })
