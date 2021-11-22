@@ -1,12 +1,31 @@
 <template>
   <div id="app">
+    <header-title :titleName="$route.meta.title" @updataTime="updataTime"></header-title>
+    <div>时间为：{{time}}</div>
     <router-view/>
   </div>
 </template>
 
 <script>
+import HeaderTitle from './components/Title';
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return {
+      time: ""
+    };
+  },
+  components:{
+    "header-title":HeaderTitle
+  },
+  methods:{
+    updataTime(time){
+      this.time = time;
+    }
+  },
+  computed:{
+
+  }
 }
 </script>
 
@@ -16,7 +35,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
-  padding: 0 100px;
 }
 </style>

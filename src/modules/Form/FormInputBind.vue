@@ -46,13 +46,13 @@
       <option value="3">王五</option>
     </select>
     <span>选中得人有：{{selectedMultiple}}</span>
-    <div>2、绑定值</div>
+    <h3>2、绑定值</h3>
     <div>很多时候，我们选择了表单的某一项，并不是想上送true和false，而是像绑定试图得某一个值，比如说：我有一个复选框，当我选中得时候，我的值为当时试图得另一个变量，具体代码如下：
     </div>
     <input type="radio" v-model="checkboxChange" :value="changeValue">
     <label for="">是否选中</label>
     <div>选中后得值为:{{checkboxChange}}</div>
-    <div>3、修饰符</div>
+    <h3>3、修饰符</h3>
     <div>3.1 .lazy：v-model在每次input事件触发后将值进行同步，我们可以添加lazy修饰符，从而转为在change事件之后进行同步</div>
     <input type="text" v-model.lazy="inputLazy">
     <div>3.2 .number：如果像自动将用户的输入值转换为数值类型，可以给v-model添加number修饰符(即使type事number，实际得到的值也是字符串)</div>

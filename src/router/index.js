@@ -7,6 +7,8 @@ import ComputedOrWatch from '@/modules/Base/ComputedOrWatch'
 import ClassOrStyle from '@/modules/Base/ClassOrStyle'
 import FormIndex from '@/modules/Form/Index'
 import FormInputBind from '@/modules/Form/FormInputBind'
+import ComponentsIndex from '@/modules/Components/Index'
+import TransmissionType from '@/modules/Components/TransmissionType'
 
 Vue.use(Router)
 
@@ -15,37 +17,74 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta:{
+        title: "首页"
+      }
     },
     {
       path: '/Base/Index',
       name: 'BaseIndex',
-      component: BaseIndex
+      component: BaseIndex,
+      meta:{
+        title: "基础篇"
+      }
     },
     {
       path: '/Base/ExampleOrTemp',
       name: 'ExampleOrTemp',
-      component: ExampleOrTemp
+      component: ExampleOrTemp,
+      meta:{
+        title: "VUE实例和模板语法"
+      }
     },
     {
       path: '/Base/ComputedOrWatch',
       name: 'ComputedOrWatch',
-      component: ComputedOrWatch
+      component: ComputedOrWatch,
+      meta:{
+        title: "计算属性和侦听器"
+      }
     },
     {
       path: '/Base/ClassOrStyle',
       name: 'ClassOrStyle',
-      component: ClassOrStyle
+      component: ClassOrStyle,
+      meta:{
+        title: "Class与Style绑定"
+      }
     },
     {
       path: '/Form/Index',
       name: 'FormIndex',
-      component: FormIndex
+      component: FormIndex,
+      meta:{
+        title: "表单篇"
+      }
     },
     {
       path: '/Form/FormInputBind',
       name: 'FormInputBind',
-      component: FormInputBind
+      component: FormInputBind,
+      meta:{
+        title: "表单输入绑定"
+      }
+    },
+    {
+      path: '/Components/Index',
+      name: 'ComponentsIndex',
+      component: ComponentsIndex,
+      meta:{
+        title: "组件篇"
+      }
+    },
+    {
+      path: '/Components/TransmissionType',
+      name: 'TransmissionType',
+      component: TransmissionType,
+      meta:{
+        title: "组件间的传值方式"
+      }
     }
   ]
 })
