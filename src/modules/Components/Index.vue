@@ -17,6 +17,14 @@
           {
             name:"组件间的传值方式",
             url:"/Components/TransmissionType"
+          },
+          {
+            name:"混入",
+            url:"/Components/MiXin"
+          },
+          {
+            name:"自定义指令",
+            url:"/Components/Directive"
           }
         ]
       }

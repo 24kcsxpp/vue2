@@ -9,6 +9,8 @@ import FormIndex from '@/modules/Form/Index'
 import FormInputBind from '@/modules/Form/FormInputBind'
 import ComponentsIndex from '@/modules/Components/Index'
 import TransmissionType from '@/modules/Components/TransmissionType'
+import MiXin from '@/modules/Components/MiXin'
+import Directive from '@/modules/Components/Directive'
 
 Vue.use(Router)
 
@@ -84,6 +86,22 @@ export default new Router({
       component: TransmissionType,
       meta:{
         title: "组件间的传值方式"
+      }
+    },
+    {
+      path: '/Components/MiXin',
+      name: 'MiXin',
+      component: MiXin,
+      meta:{
+        title: "混入"
+      }
+    },
+    {
+      path: '/Components/Directive',
+      name: 'Directive',
+      component: Directive,
+      meta:{
+        title: "自定义指令"
       }
     }
   ]
