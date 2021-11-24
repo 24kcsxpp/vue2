@@ -6,7 +6,7 @@
         :key="index"
         class="base_list"
         @click="goInfo(item.url)">{{index + 1 + '、'}}{{item.name}}</div>
-  </div>
+    </div>
 </template>
 
 <script>

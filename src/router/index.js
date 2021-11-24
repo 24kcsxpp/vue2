@@ -11,6 +11,10 @@ import ComponentsIndex from '@/modules/Components/Index'
 import TransmissionType from '@/modules/Components/TransmissionType'
 import MiXin from '@/modules/Components/MiXin'
 import Directive from '@/modules/Components/Directive'
+import StoreIndex from '@/modules/Store/Index'
+import State from '@/modules/Store/State'
+import Getters from '@/modules/Store/Getters'
+import Mutations from '@/modules/Store/Mutations'
 
 Vue.use(Router)
 
@@ -102,6 +106,38 @@ export default new Router({
       component: Directive,
       meta:{
         title: "自定义指令"
+      }
+    },
+    {
+      path: '/Store/Index',
+      name: 'StoreIndex',
+      component: StoreIndex,
+      meta:{
+        title: "状态篇"
+      }
+    },
+    {
+      path: '/Store/State',
+      name: 'State',
+      component: State,
+      meta:{
+        title: "State篇"
+      }
+    },
+    {
+      path: '/Store/Getters',
+      name: 'Getters',
+      component: Getters,
+      meta:{
+        title: "Getters篇"
+      }
+    },
+    {
+      path: '/Store/Mutations',
+      name: 'Mutations',
+      component: Mutations,
+      meta:{
+        title: "Mutations篇"
       }
     }
   ]
