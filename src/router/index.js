@@ -15,6 +15,7 @@ import StoreIndex from '@/modules/Store/Index'
 import State from '@/modules/Store/State'
 import Getters from '@/modules/Store/Getters'
 import Mutations from '@/modules/Store/Mutations'
+import Modules from '@/modules/Store/Modules'
 
 Vue.use(Router)
 
@@ -138,6 +139,14 @@ export default new Router({
       component: Mutations,
       meta:{
         title: "Mutations篇"
+      }
+    },
+    {
+      path: '/Store/Modules',
+      name: 'Modules',
+      component: Modules,
+      meta:{
+        title: "Modules篇"
       }
     }
   ]

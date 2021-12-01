@@ -2,6 +2,7 @@ import Vue from "vue"
 import Vuex from "vuex"
 
 Vue.use(Vuex)
+import Bank from "./module/Bank"
 export default new Vuex.Store({
   state:{
     firstName: "张",
@@ -25,5 +26,8 @@ export default new Vuex.Store({
     changeSex(state){
       state.sex = state.sex === "男"?"女":"男";
     }
+  },
+  modules:{
+    bank:Bank
   }
 });

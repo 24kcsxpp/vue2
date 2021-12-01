@@ -27,6 +27,10 @@ export default {
           {
             name:'Mutations篇',
             url:'/Store/Mutations'
+          },
+          {
+            name:'Modules篇',
+            url:'/Store/Modules'
           }
         ]
       }
