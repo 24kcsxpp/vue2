@@ -17,6 +17,10 @@
           {
             name:'表单输入绑定',
             url:'/Form/FormInputBind'
+          },
+          {
+            name:'表单组件',
+            url:'/Form/FormComponents'
           }
         ]
       }

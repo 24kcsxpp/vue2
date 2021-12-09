@@ -7,6 +7,7 @@ import ComputedOrWatch from '@/modules/Base/ComputedOrWatch'
 import ClassOrStyle from '@/modules/Base/ClassOrStyle'
 import FormIndex from '@/modules/Form/Index'
 import FormInputBind from '@/modules/Form/FormInputBind'
+import FormComponents from '@/modules/Form/FormComponents'
 import ComponentsIndex from '@/modules/Components/Index'
 import TransmissionType from '@/modules/Components/TransmissionType'
 import MiXin from '@/modules/Components/MiXin'
@@ -75,6 +76,14 @@ export default new Router({
       component: FormInputBind,
       meta:{
         title: "表单输入绑定"
+      }
+    },
+    {
+      path: '/Form/FormComponents',
+      name: 'FormComponents',
+      component: FormComponents,
+      meta:{
+        title: "表单组件"
       }
     },
     {
